@@ -1,0 +1,192 @@
+.top-menu{padding-top:6px}
+.sinilink{padding:3px}
+.sinilink:hover {background:#595959; color:#fff; -webkit-border-radius:6px; -moz-border-radius:6px; border-radius:6px; -webkit-transition:background 0.3s ease; -moz-transition:background 0.3s ease; -o-transition:background 0.3s ease; transition:background 0.3s ease; behavior:url(css/PIE.htc)}
+
+
+/* ---------------------------
+ Cover
+--------------------------- */
+.cover-image{background:#fff; float:left; padding-right:16px; border:0}
+
+.cover-image img { 
+ margin:5px;
+ border:5px solid #b3b3b3;
+ -webkit-border-radius:5px;
+ -moz-border-radius:5px;
+ -o-border-radius:5px;
+ border-radius:5px;
+ -moz-box-shadow: 0 0 4px #CCC;
+ -webkit-box-shadow: 0 0 4px #CCC;
+ box-shadow: 0 0 4px #CCC;
+}
+
+
+/* ---------------------------
+ Tabs
+--------------------------- */
+.tabs-content img{ border:1px solid #DDD; padding:3px; margin-right:5px}
+.flow-image{float:left}
+.flow-image img{ border:1px solid #DDD; padding:3px; margin-right:5px}
+.flow-image img:hover{ border:1px solid #EAEAEB;}
+
+/* ------------
+  Dropdown menu
+ ------------ */
+.menu{ margin:0px; padding:0px; list-style:none; color:#fff; line-height:45px; display:inline-block; float:left; z-index:1000} 
+.menu a { color:#666; text-decoration:none} 
+.menu > li {background: none repeat scroll 0 0; cursor:pointer; float:left; position:relative; padding:0px 5px} 
+.menu > li a:hover {color:#000}  
+/* sub-menus*/ 
+.menu ul { padding:0px; margin:0px; display:block; display:inline; z-index:999}
+.menu li #kolmnurk {
+ position:absolute; 
+ display:none; 
+ z-index:999; 
+ top:26px; 
+ left:12px;
+} 
+.menu li:hover #kolmnurk {display:block}
+.menu li ul { 
+ border:3px solid #E7E5E1; 
+ position:absolute; 
+ left:-40px; 
+ top:0px; 
+ margin-top:40px; 
+ width:120px; 
+ line-height:16px; 
+ background-color:#F7F7F7; 
+ color:#0395CC; /* for IE */ 
+ display:none; 
+ box-shadow:0 10px 20px rgba(0, 0, 0, 0.3); 
+ -webkit-box-shadow:0 10px 20px rgba(0, 0, 0, 0.3); 
+ -moz-box-shadow:0 10px 20px rgba(0, 0, 0, 0.3);
+ } 
+.menu li:hover ul {display:block;} 
+.menu li ul li{display:block; margin:5px 20px; padding: 5px 0px;  border-top: solid 3px #E7E5E1; list-style-type:none; text-align:center} 
+.menu li ul li:first-child {border-top: none} 
+.menu li ul li a {color:#0395CC;} 
+.menu li ul li a:hover {color:#595959;} 
+/* main submenu */ 
+.menu #main {left:0px; top:-20px; padding-top:20px; background-color:#7cb7e3; color:#fff; z-index:999} 
+    
+/*--------------------------
+ CLUETIP
+ eelvaated
+--------------------------*/
+div.ui-cluetip{font-size:1em; margin-left:80px}
+.ui-cluetip-header, .ui-cluetip-content {padding:2px}
+.ui-cluetip-header {font-size:1em; margin:0; overflow:hidden}
+#cluetip-title #cluetip-close {float:right; position:relative}
+#cluetip-extra {display:none}
+.cluetip-default {background-color:#fff}
+.cluetip-default .ui-cluetip-header {background-color:#fff}
+.cluetip-rounded {-webkit-border-radius:6px; -moz-border-radius:6px; border-radius:6px; behavior: url(css/PIE.htc);background-color:#fff; border:1px solid #D1D1D1}
+/* stupid IE6 HasLayout hack */
+.cluetip-rounded #cluetip-title,.cluetip-rounded #cluetip-inner{zoom:1}
+
+
+/* ------------------------
+ Uue projekti loomine
+------------------------- */
+#UueProjektiLisamine #ProjektiNimiInput, #ProjektiKirjeldusTextarea{width:500px}
+
+/* --------------------------
+ UPLOAD.php
+-------------------------- */
+#drop-area{ height:210px; text-align:center; border:2px dashed #8cab2a; padding:10px; margin-bottom:2em;background-color:#dafda5}		
+#drop-area .drop-instructions{ display:block; font-size:45px; height:50px}		
+#drop-area .drop-over{ display:none; font-size:45px; height:50px}				
+#drop-area.over{ background:#ffffa2; border:2px dashed #000}		
+#drop-area.over .drop-instructions{ display:none}
+#drop-area.over .drop-over{ display:block}		
+#drop-area.over .drop-over{ display:block; font-size:45px}		
+#file-list{ list-style:none; margin-bottom:3em}	
+#file-list li{ border-bottom:1px solid #000; margin-bottom:0.5em; padding-bottom:0.5em}
+#file-list li.no-items{ border-bottom:none}		
+#file-list div{ margin-bottom:0.5em}		
+#file-list li img{ max-width:400px}		
+#file-list .progress-bar-container{ width:400px; height:10px; border:1px solid #555; margin-bottom:20px}		
+#file-list .progress-bar-container.uploaded{ height:auto; border:none}		
+#file-list .progress-bar{ width:0; height:10px; font-weight:bold; background:#6787e3}		
+#file-list .progress-bar-container.uploaded .progress-bar{ display:inline-block; width:auto; color:#6db508; background:transparent}
+
+.span_green{ padding:2px; background-color:#dafda5}
+
+/* -------------------------------
+ edit.php
+------------------------------- */
+.delButton{color:red}
+.DeleteTable th{padding:3px}
+.DeleteTable tr{padding:3px;background-color:#dafda5}
+.DeleteTable tr:hover{ background-color:#fbc7c7}
+.th_middle {vertical-align:middle}
+.KustutaProjekt{width:100%}
+.KustutaProjekt tr{
+ margin:5px;
+ padding:5px;
+ background-color:#fff568;
+ border:red 2px dotted }
+.KustutaProjekt tr:hover{background-color:#fbc7c7}
+#otsinguform input[type="text"]{width:110px}
+
+/*	--------------------------------------------------
+	Reveal Modals
+	-------------------------------------------------- */	
+.reveal-modal-bg { 
+	position:fixed; 
+	height:100%;
+	width:100%;
+	background:#000;
+	background:rgba(0,0,0,.8);
+	z-index:100;
+	display:none;
+	top:0;
+	left:0
+}
+	
+.reveal-modal {
+	visibility:hidden;
+	top:100px; 
+	left:50%;
+	margin-left:-300px;
+	width:520px;
+	background:#eee url(../images/modal-gloss.png) no-repeat -200px -80px;
+	position:absolute;
+	z-index:101;
+	padding:30px 40px 34px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius:5px;
+	-moz-box-shadow:0 0 10px rgba(0,0,0,.4);
+	-webkit-box-shadow:0 0 10px rgba(0,0,0,.4);
+	-box-shadow:0 0 10px rgba(0,0,0,.4)
+}
+		
+.reveal-modal.small { width:200px; margin-left:-140px}
+.reveal-modal.medium { width:400px; margin-left:-240px}
+.reveal-modal.large { width:600px; margin-left:-340px}
+.reveal-modal.xlarge { width:800px; margin-left:-440px}
+	
+.reveal-modal .close-reveal-modal {
+	font-size:22px;
+	line-height:.5;
+	position:absolute;
+	top:8px;
+	right:11px;
+	color:#aaa;
+	text-shadow:0 -1px 1px rbga(0,0,0,.6);
+	font-weight:bold;
+	cursor:pointer
+} 
+/*	
+NOTES
+Close button entity is &#215;
+Example markup
+<div id="myModal" class="reveal-modal">
+	<h2>Awesome. I have it.</h2>
+	<p class="lead">Your couch.  I it's mine.</p>
+	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ultrices aliquet placerat. Duis pulvinar orci et nisi euismod vitae tempus lorem consectetur. Duis at magna quis turpis mattis venenatis eget id diam. </p>
+	<a class="close-reveal-modal">&#215;</a>
+</div>
+*/
+

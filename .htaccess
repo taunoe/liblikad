@@ -1,0 +1,21 @@
+# Enable Rewriting
+RewriteEngine on
+
+# Rewrite user URLs
+#   Input:  /6001
+#   Output: index.php?q=6001
+#RewriteRule ^page/([^/\.]+)/?$ index.php?page=$1 
+ RewriteRule ^([^/\.]+)/?$ index.php?projekt=$1
+# RewriteRule ^(\w+)/?$ index.php?projekt=$1 Selle varjandiga ei t66ta täpitähed
+
+# If the requested page is not a file or directory
+# Silent Redirect: the user's URL bar is unchanged.
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule .* index.php [L]
+
+ErrorDocument 404 /404page.php
+ErrorDocument 403 /404page.php
+ErrorDocument 401 /404page.php
+ErrorDocument 400 /404page.php
+ErrorDocument 500 /404page.php
